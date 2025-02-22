@@ -5,24 +5,24 @@
 class GitCloneOrg < Formula
   desc "tool to clone all repositories from a gitbub organization or user"
   homepage "https://github.com/wingmans/"
-  version "0.1.5"
+  version "0.1.6"
   license "Apache License Version 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.5/git-clone-org_Darwin_x86_64.tar.gz"
-      sha256 "c2964f63a37649deaee9bbb0318bf07f609be9b2067c793cf874dcf1c74dbb30"
+      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.6/git-clone-org_Darwin_x86_64.tar.gz"
+      sha256 "f4461d1dc976da667f9465c8a4ce6e7b3943e93137147a3170eb53a80c84f13f"
 
       def install
-        bin.install "policy"
+        bin.install "git-clone-org"
       end
     end
     on_arm do
-      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.5/git-clone-org_Darwin_arm64.tar.gz"
-      sha256 "51c282a83e4fe7693886352965f933f9ca8aa787e9aaf0c8d28a68dd19810be9"
+      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.6/git-clone-org_Darwin_arm64.tar.gz"
+      sha256 "3dbfb2a7f497381abfe50cc207cf346ad3439f9c39da6403d498c51bd9d0be6d"
 
       def install
-        bin.install "policy"
+        bin.install "git-clone-org"
       end
     end
   end
@@ -30,27 +30,27 @@ class GitCloneOrg < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.5/git-clone-org_Linux_x86_64.tar.gz"
-        sha256 "9f96a3d7e961e46b25284a1f933d724bc39ac26196c23e2c7f1dbd71ad7f1a86"
+        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.6/git-clone-org_Linux_x86_64.tar.gz"
+        sha256 "28de800cf3390688ac76879926d20e0c2cba639c1c638bf6a459a4df76567f83"
 
         def install
-          bin.install "policy"
+          bin.install "git-clone-org"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.5/git-clone-org_Linux_arm64.tar.gz"
-        sha256 "eea793cdcd7543a5a91d5e3210f89b31d54d57b85ff7c7ba077fcd2fcddd9b64"
+        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.6/git-clone-org_Linux_arm64.tar.gz"
+        sha256 "61f87687a04880a87d1d849d29dc02c31eb7657c5beadc8eb5325257fc5a27df"
 
         def install
-          bin.install "policy"
+          bin.install "git-clone-org"
         end
       end
     end
   end
 
   test do
-    system "#{bin}/policy version"
+    system "#{bin}/git-clone-org version"
   end
 end
