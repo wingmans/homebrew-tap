@@ -5,21 +5,21 @@
 class GitCloneOrg < Formula
   desc "policy CLI for building and managing authorization policies"
   homepage "https://github.com/wingmans/"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache License Version 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.3/git-clone-org_Darwin_x86_64.tar.gz"
-      sha256 "94e437d48953f34c2ecb6de26af0ffd161b820475fe80258459b0933bbf288a1"
+      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.4/git-clone-org_Darwin_x86_64.tar.gz"
+      sha256 "987d20d7644ef032d778fc0cbc85ead75b338ff1b8d1156cd6c745ac2ed98a0c"
 
       def install
         bin.install "policy"
       end
     end
     on_arm do
-      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.3/git-clone-org_Darwin_arm64.tar.gz"
-      sha256 "5ba9df8101a33343ff9beef080dbd57e1ad5668ed7349c01a69c422044b6d0db"
+      url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.4/git-clone-org_Darwin_arm64.tar.gz"
+      sha256 "28945a009799226bc07130d7ae3bb29f1a07d88e1799f051879337b33df06513"
 
       def install
         bin.install "policy"
@@ -30,8 +30,8 @@ class GitCloneOrg < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.3/git-clone-org_Linux_x86_64.tar.gz"
-        sha256 "2a0d8052968c619f293e3884ed704ade2e0ec0217b827ad12bc66de6119eac62"
+        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.4/git-clone-org_Linux_x86_64.tar.gz"
+        sha256 "af82ec83837d5bcd32ed36773b903489ef160f6103eddcdf940cfdda40c11022"
 
         def install
           bin.install "policy"
@@ -40,8 +40,8 @@ class GitCloneOrg < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.3/git-clone-org_Linux_arm64.tar.gz"
-        sha256 "eab94d383d6a1077a7c6bcf709e67c6047c394830ea7e368cadcbba8766ba183"
+        url "https://github.com/wingmans/git-clone-org/releases/download/v0.1.4/git-clone-org_Linux_arm64.tar.gz"
+        sha256 "1dabaa6ccbd602eb9ab775b1c9d4398b1cc6d1bf9629bc59177790b6b1e36494"
 
         def install
           bin.install "policy"
